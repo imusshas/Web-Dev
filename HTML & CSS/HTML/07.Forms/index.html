@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Tutorial</title>
+</head>
+<body>
+  <section id="linker">
+    Go to
+    <a href="#radio-button">Radio Button</a>
+    section
+    &nbsp;&nbsp;&nbsp;
+    Go to
+    <a href="#dropdown-list">Dropdown List</a>
+    section
+    &nbsp;&nbsp;&nbsp;
+    Go to
+    <a href="#more-html-input">More HTML Input Elements</a>
+    section
+  </section>
+
+  <section id="html-form">
+    <h1>HTML Form</h1>
+    <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+    <br> <br>
+    <label for="password">Passowrd:</label>
+    <input type="password" id="password">
+    <br> <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br> <br>
+    <input type="submit" value="Sign In">
+    </form>
+  </section>
+
+  <!-- action method & name attribute -->
+  <section id="action-attribute">
+    <h1>Action Attribute</h1>
+    <form action="thankyou.html">
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+    <br> <br>
+    <label for="password">Passowrd:</label>
+    <input type="password" id="password">
+    <br> <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br> <br>
+    <input type="submit" value="Sign In">
+    </form>
+  </section>
+
+  <section id="method-attribute">
+    <h1>Method Attribute</h1>
+    <form action="thankyou.html" method='POST'>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username">
+    <br> <br>
+    <label for="password">Passowrd:</label>
+    <input type="password" name="password" id="password">
+    <br> <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <br> <br>
+    <input type="submit" value="Sign In">
+    </form>
+  </section>
+
+  <section id="placeholder-&-required">
+    <h1>PlaceHolder & Required</h1>
+    <form>
+    <label for="username">Username:</label>
+    <input type="text" placeholder="Username" id="username" required>
+    <br> <br>
+    <label for="password">Passowrd:</label>
+    <input type="password" placeholder="Passowrd" id="password" required>
+    <br> <br>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="example@email.com" id="email" required>
+    <br> <br>
+    <input type="submit" value="Sign In">
+    </form>
+  </section>
+
+  <section id="radio-button">
+    <h1>Radio Button</h1>
+    <form>
+    <p>Please select your gender</p>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="male" id="female">
+    <br>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <br> <br>
+    <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="dropdown-list">
+   <h1>Dropdown List</h1>
+    <form action="thankyou.html" method="get">
+    <p>Please Select your favourite ice-cream</p>
+    <select name="favourite-ice-cream" id="ice-cream">
+      <option value="chocolate">Chocolate</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="butter-pecan">Butter Pecan</option>
+      <option value="rocky-road">Rocky Road</option>
+      <option value="igloo">Igloo</option>
+      <option value="zan-zee" selected>Zan-Zee</option>
+    </select>
+    <br> <br>
+    <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="more-html-input">
+    <h1>Some More HTML Input Elements</h1>
+    <form>
+      <label for="comment">Comment below:</label>
+      <br>
+      <textarea name="" id="comment" cols="30" rows="10" placeholder="type here"></textarea>
+      <br>
+      <label for="color-picker">Pick a Color:</label>
+      <input type="color" id="color-picker">
+      <br>
+      <label for="date-selector">Select your birthday:</label>
+      <input type="date" name="birthday" id="date-selector">
+      <br>
+      <label for="picture">Upload your image:</label>
+      <input type="file" name="profile-picture" id="picture" required>
+      <br> <br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</body>
+</html>

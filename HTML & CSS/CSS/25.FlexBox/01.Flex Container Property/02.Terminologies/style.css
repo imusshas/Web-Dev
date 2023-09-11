@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* ##########      FLEX CONTAINER     ################ */
+.box-wrapper {
+  display: flex;
+  border: 10px solid black;
+}
+/* ##########      FLEX CONTAINER     ################ */
+
+
+
+
+/* ##########      FLEX ITEMS     ################ */
+
+.box {
+  border: 4px solid red;
+}
+
+.box1 {
+  background: aquamarine;
+}
+
+.box2 {
+  background-color: beige;
+}
+
+.box3 {
+  background-color: salmon;
+}
+
+.box4 {
+  background-color: #ccc;
+}
+/* ##########      FLEX ITEMS     ################ */

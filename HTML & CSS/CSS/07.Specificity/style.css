@@ -1,0 +1,42 @@
+/* Specificty rule:-
+   !important > Inline CSS > Id Selector > Class Selector > Element Selector */
+
+/* Specificity Calculator:->
+  !important = 10000
+  Inline CSS = 1000
+  Id Selector = 100
+  Class Selector = 10
+  Element Selector = 1
+
+  Specificity = no of !important * 10000 + no of Id * 100 + no of Class * 10 + no of Element * 1
+   */
+
+
+h1.hello {
+  color: red;
+}
+.hello {
+  color: green;
+}
+
+#helloId {
+  color: cornflowerblue !important;
+}
+
+h1 {
+  color: yellow;
+}
+
+div.container ul.my-food li{
+  background-color: gray;
+  color: yellowgreen;
+}
+
+/* Specificity = 2*10 + 3 = 23 */
+
+div.container ul.my-food li.favourite {
+  background-color: yellowgreen;
+  color: gray;
+}
+
+/* Specificity = 3*10 + 3 = 33 */

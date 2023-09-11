@@ -1,0 +1,29 @@
+/* a[href="https://www.google.com.bd"] {
+  color: red;
+} */
+
+a[href *= "google"] {
+  color: green;
+}
+
+/* All the links that starts with https */
+a[href ^= "https"] {
+  color: coral;
+}
+
+/* All the links that ends with .com */
+a[href $= ".com"] {
+  color: firebrick;
+}
+
+/* a {
+  color: firebrick;
+} */
+
+input[type="text"] {
+  color: crimson;
+}
+
+input[type="password"] {
+  background-color: bisque;
+}

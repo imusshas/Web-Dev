@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ##########      FLEX CONTAINER     ################ */
+.box-wrapper {
+  /* height: 600px; */
+  width: auto;
+  border: 10px solid black;
+
+  display: flex;
+  /* flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-evenly; */
+  
+  flex-direction: column;
+  height: 400px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-between;
+  
+}
+/* ##########      FLEX CONTAINER     ################ */
+
+
+
+
+/* ##########      FLEX ITEMS     ################ */
+
+.box {
+  /* width: 450px; */
+  /* height: 600px; */
+  width: 30%;
+  border: 4px solid red;
+}
+
+.box1 {
+  background: aquamarine;
+}
+
+.box2 {
+  background-color: beige;
+}
+
+.box3 {
+  background-color: salmon;
+}
+
+.box4 {
+  background-color: #ccc;
+}
+/* ##########      FLEX ITEMS     ################ */

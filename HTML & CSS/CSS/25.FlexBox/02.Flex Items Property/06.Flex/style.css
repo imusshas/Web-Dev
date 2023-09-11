@@ -1,0 +1,38 @@
+
+
+/* ##########      FLEX CONTAINER     ################ */
+.box-wrapper {
+  max-width: 1200px;
+  border: 10px solid gray;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+/* ##########      FLEX CONTAINER     ################ */
+
+
+
+
+/* ##########      FLEX ITEMS     ################ */
+.box {
+  flex: 1 1 400px;
+}
+
+.box1 {
+  background: aquamarine;
+  flex: 1 2 400px; /* flex: flex-grow flex-shirnk flex-basis  */
+}
+
+.box2 {
+  background-color: beige;
+  flex: 2 1 400px;
+}
+
+.box3 {
+  background-color: salmon;
+  flex-grow: 3 9 400px;
+}
+
+.box4 {
+  background-color: #ccc;
+}
+/* ##########      FLEX ITEMS     ################ */

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+}
+
+/* ################      Utility Classes       ################## */
+.text-black {
+  color: #333;
+}
+
+.text-white {
+  color: whitesmoke;
+}
+
+.text-red {
+  color: #e13c3c;
+}
+
+.text-grey {
+  color: #777;
+}
+
+.learge-heading {
+  font-size: 2.4rem;
+}
+
+.medium-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.utility-button {
+  padding: 1em 0.8em;
+  outline: none;
+  border: none;
+  border-radius: 1.8em;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ################      Utility Classes       ################## */
+
+
+
+/* ###############       Size Fitting          ################## */
+.container {
+  max-width: 100vw;
+  width: 80%;
+  /* border: 10px solid greenyellow; */
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ###############       Size Fitting          ################## */
+
+
+
+
+/* ###############      Header Styling      ################## */
+header {
+  background-image: url(../Img/header-image.jpg);
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+  position: relative;
+}
+
+nav img {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 0;
+}
+
+nav ul li{
+  font-size: 2rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+nav a {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-right: 1em;
+}
+
+nav a.last-nav-link {
+  margin-right: 0;
+}
+
+nav a:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+
+.header-content-container {
+  text-align: center;
+  text-transform: uppercase;
+  /* border: 5px solid gray; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content {
+  width: 100%;
+}
+
+.header-content-container p {
+  margin: 1.5em 0;
+}
+
+.header-content-container button {
+  /* font-size: 2rem; */
+  text-transform: uppercase;
+}
+
+/* ###############      Header Styling      ################## */
+
+
+/* ###############     Main Styling      ################### */
+.main-background {
+  background-color: #ddd;
+  padding: 8rem 0;
+}
+
+.main-content {
+  background: white;
+  height: 36rem;
+  box-shadow: 0px 0px 10px 5px #ccc;
+}
+
+.lower-content {
+  margin-top: 8rem;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  /* display: block; */
+  margin: 0 1rem;
+}
+
+.text-content button {
+  text-transform: uppercase;
+  border: 1px solid #e13c3c;
+  margin-top: 2em;
+}
+
+/* ***************     Feature Styling    ***************** */
+.feature-container {
+  background: #263238;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 8rem;
+
+  box-shadow: 0px 0px 10px 5px #ccc;
+}
+
+.feature {
+  padding: 1em;
+}
+
+.middle-feature {
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+}
+/* ***************     Feature Styling    ***************** */
+
+/* ###############     Main Styling      ################### */
+
+/* ##################       Footer Styling      ################# */
+footer {
+  background: #263238;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 1em 0;
+}
+
+footer i {
+  padding: 0 0.5em;
+}
+/* ##################       Footer Styling      ################# */
+
+
+/* #################       Navigation Bar Styling     ################## */
+.navbar {
+  background: #263238;
+}
+/* #################       Navigation Bar Styling     ################## */
+
+/* #################        About Page Styling        ################## */
+.about-main-container {
+  margin: 8rem auto;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 0.1px 0.15px #aaa;
+}
+
+.about-main-container h2 {
+  display: block;
+  width: 100%;
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.about-main-container h2::after {
+  display: block;
+  content: '';
+  border: 3px solid #e13c3c;
+  margin: 0.5em auto;
+}
+
+.about-list-container {
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.about-list-container ul{
+  margin: 3rem auto;
+}
+
+.about-list-container li::before {
+  content: '\2713';
+  color: #e13c3c;
+  margin-right: 0.5em;
+}
+
+.num-info-container {
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
+}
+
+.num-info-container span {
+  display: block;
+  text-align: center;
+}
+
+span.text-red {
+  font-size: 2rem;
+}
+
+.about-feature {
+  width: 100%;
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  font-weight: 700;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.about-feature a {
+  color: whitesmoke;
+  padding: 1em 4em;
+  border: 3px solid whitesmoke;
+  margin: 0.25em;
+}
+/* #################        About Page Styling        ################## */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <!-- <script src="../DOM Model/105_script.js"></script> -->
+        <!-- !Wrong Execution Error-->
+    
+    <!-- <script src="../DOM Model/105_script.js" async></script> -->
+        <!-- Chances of error as parshing may stop -->
+    
+    <!-- <script src="../01.DOM Model/110_script_innerHTML.js" defer></script> -->
+         <!-- Parse & Load simuntaniously. IF load completes then complete parse first and then execute -->
+
+    <script src="../01.DOM Model/118_script_dimentionElement.js" defer></script>
+    </head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="">ToDo</a></li>
+                <li class="nav-item"><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <div class="headline">
+            <h2 id="main-heading">Mange Your Tasks <span style="display: none;">Hello</span></h2>
+            <button class="btn btn-headline" onclick="console.log('You Clicked Me')">Learn More</button>
+        </div>
+    </header>
+
+    <section class="to-do-section container">
+        <h2>Your Plan Today?</h2>
+        <form class="to-do-form">
+            <input type="text" placeholder="Add Todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+        <ul class="to-do-list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ul>
+    </section>
+
+    <section class="signup-section container">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="about-yourself">About Yourself</label>
+                <textarea name="about-yourself" id="about-yourself" cols="30" rows="10">
+                </textarea>
+            </div>
+
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+
+     <!-- <script src="./105_script.js"></script> Performance Error: Too much time consuming -->
+</body>
+</html>

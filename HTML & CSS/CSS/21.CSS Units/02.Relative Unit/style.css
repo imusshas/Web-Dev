@@ -1,0 +1,42 @@
+.relative {
+  font-size: 10px;
+  text-align: justify;
+  border: 2px solid orangered;
+  width: 50%;
+}
+
+.content {
+  width: 50%;
+  font-size: 200%;
+  border: 2px solid seagreen;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+
+
+/* rem unit */
+.rem {
+  font-size: 0.5rem; /* 0.5rem = 0.5 * 16px (Browser Default) */
+  border: 1rem solid cornflowerblue;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.text-content {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: end;
+}
+
+.em-heading {
+  font-size: 2em; /* 2em = 2 * 16px */
+  border: 0.2em solid lightblue; /* 0.2em = 0.2 * 32px (Making font-size as default) */
+  margin: 0em 4em;
+}
+
+/* 
+  Preference:
+    font-size: rem;
+    border: px;
+    padding, margin: em;
+*/

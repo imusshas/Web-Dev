@@ -1,0 +1,44 @@
+Browser ----->      js Engine + webApi
+
+js Engine [
+    // js Engine asks the browser if any event occurs or not? If occurs then give the callback function to it
+    GEC Memory [
+        #one
+        #two
+        #three
+    ]
+
+    callStack[
+        Global Execution Context() {popped 1st}
+        #one callback() {popped 2nd} 
+        #two callback() {popped 3rd} 
+        #three callback() {popped 4th} 
+    ]
+
+    console ~[
+        1. script start!!!
+    ]~
+]
+
+webApi [
+    #one [
+        clicked or not?
+    ]
+    #two [
+        clicked or not?
+    ]
+    #three [
+        clicked or not?
+    ]
+]
+
+Line (callback queue) [
+    1. #one CallBack Function {popped 1st}
+    2. #two CallBack Function {popped 2nd}
+    3. #three CallBack Function {popped 3rd}
+]
+
+eventLoop [
+    checks if the work of CALLSTACK is done or not?
+    checks if the LINE is empty or not?
+]

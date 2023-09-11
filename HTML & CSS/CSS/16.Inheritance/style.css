@@ -1,0 +1,23 @@
+body {
+  color: red;
+}
+
+.description {
+  background-color: black;
+  color: bisque;
+}
+
+a {
+  color: brown;
+  text-decoration: none;
+}
+
+.list {
+  background-color: gray;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

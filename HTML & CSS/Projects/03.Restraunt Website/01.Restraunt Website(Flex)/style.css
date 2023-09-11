@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  /* background-color: beige; */
+}
+
+/* #################      Utility Classes      ################### */
+.container {
+  max-width: 100vw;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.utility-button {
+  display: inline-block;
+  font-weight: 500;
+  padding: 1em 2em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* #################      Utility Classes      ################### */
+
+/* #################      Header Styling       #################### */
+.index-header {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("../Img/header-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+/* *****************      Navigation Styling       ******************** */
+nav {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px #aaa;
+
+  position: fixed;
+
+  z-index: 10;
+  opacity: 0.85;
+}
+
+.nav-content {
+  padding: 1em 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 4rem;
+  height: 4rem;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-right: 1em;
+}
+
+.last-nav-item {
+  padding-right: 0;
+}
+
+nav a {
+  color: #444;
+}
+
+nav a:hover {
+  color: #117964;
+}
+/* *****************      Navigation Styling       ******************** */
+
+.header-content {
+  align-self: center;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.link-button{
+  background-color: #16a083;
+  color: #fff;
+}
+
+.link-button:hover {
+  background: #117964;
+  box-shadow: 0px 0px 2px 0px #aaa;
+}
+/* #################      Header Styling       #################### */
+
+/* #################      Main Styling        ################### */
+
+/* *****************      About Styling        ****************** */
+.about-us-container {
+  padding: 10rem 0;
+  background: #e8e9e9;
+  display: flex;
+}
+
+.about-us {
+  /* border: 4px solid green; */
+  box-shadow: 0px 0px 1px 0px #aaa;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-article {
+  padding: 1rem;
+  padding-right: 10rem;
+  /* border: 2px solid red; */
+  margin: auto;
+
+  flex-basis: 60%;
+
+  transform: translateX(-200%);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: about-article-animation 1s ease-in-out 0s 1 alternate forwards;
+}
+
+@keyframes about-article-animation {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.about-article strong {
+  color: #444;
+  font-weight: 600;
+}
+
+.about-image {
+  flex-basis: 40%;
+  /* border: 2px solid red; */
+
+  transform: translateX(200%);
+  animation: about-image-animation 1s ease-in-out 0s 1 alternate forwards;
+}
+
+@keyframes about-image-animation {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+}
+/* *****************      About Styling        ****************** */
+
+/* *****************      Food Type Styling       ********************* */
+.food-type-container {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.food-heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.food-heading h3 {
+  color: #444;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.food-image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.food-image {
+  flex-basis: 32%;
+  /* position: absolute; */
+  /* border: 2px solid red; */
+
+  position: relative;
+}
+
+.food-image img {
+  display: block;
+  width: 100%;
+  max-height: 36rem;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* $$$$$$$$$$$$$$$$$      Food Image Overlay Styling      $$$$$$$$$$$$$$$$$$$ */
+.food-image-overlay {
+  width: 80%;
+  margin: 0 auto;
+  color:#fff;
+  text-align: center;
+  /* border: 2px solid green; */
+
+  position: absolute;
+  top: 60%;
+  left: 10%;
+
+  z-index: 2;
+  opacity: 0;
+
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+
+.food-image:hover .food-image-overlay {
+  top: 30%;
+  opacity: 1;
+}
+
+.food-image::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  z-index: 1;
+  
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.food-image:hover::after {
+  transform: scaleY(1);
+}
+/* $$$$$$$$$$$$$$$$$      Food Image Overlay Styling      $$$$$$$$$$$$$$$$$$$ */
+
+/* *****************      Food Type Styling       ********************* */
+
+/* *****************      Menu Item Styling       ********************* */
+
+
+.food-menu-container {
+  text-align: center;
+  color: #444;
+  padding: 5rem 0;
+}
+
+.menu-item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex-basis: 50%;
+
+  margin: 2.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-image {
+  flex-basis: 50%;
+}
+
+.menu-description {
+  flex-basis: 50%;
+
+  text-align: left;
+  margin: auto;
+}
+
+.menu-image img {
+  width: 20rem;
+  height: 20rem;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-description strong {
+  color: #16a083;
+}
+/* *****************      Menu Item Styling       ********************* */
+
+
+/* *****************      Customer Review Styling      ******************* */
+.customer-review {
+  background-color: #e8e9e9;
+  padding: 5rem 0;
+}
+
+.customer-review-container h2{
+  color: #444;
+  font-weight: 600;
+  text-align: center;
+}
+
+.review-content-container {
+  /* border: 2px solid brown; */
+  margin: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-content {
+  flex-basis: 33.3%;
+}
+
+.review-article, .review-image {
+  text-align: center;
+}
+
+.review-article {
+  padding: 0 1rem;
+}
+
+.review-article .review-icon {
+  color: #ff9529;
+  margin-bottom: 1rem;
+}
+
+.review-image img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.review-image span {
+  display: block;
+}
+/* *****************      Customer Review Styling      ******************* */
+
+
+/* *****************      Contact Styling      ****************** */
+.contact-container {
+  background-color: #ddd;
+  padding: 5rem 0;
+}
+
+.contact {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-image, .contact-form {
+  flex-basis: 50%;
+}
+
+.contact-form {
+  padding: 1rem;
+}
+
+.contact-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 36rem;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-form h2 {
+  color: #444;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.contact-form h2::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #444;
+}
+
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.contact-form textarea {
+  height: 15rem;
+}
+
+.contact-form button {
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+/* *****************      Contact Styling      ****************** */
+
+/* #################      Main Styling        ################### */
+
+
+/* #################      Footer Styling      ###################*/
+footer {
+  background-color: #263238;
+  color: #ddd;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem 0;
+}
+/* #################      Footer Styling      ###################*/
+
+/* #################      Media Queries       ################### */
+
+@media (min-width: 1081px){
+  .hamburger-menu input[type="checkbox"], .hamburger-line {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .nav-content img {
+    order: 1;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    /* border: 2px solid red; */
+  }
+
+  .hamburger-menu input[type="checkbox"] {
+    width: 4rem;
+    height: 3rem;
+    
+    position: absolute;
+    top: -1.5rem;
+
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .hamburger-line {
+    width: 4rem;
+    height: 3rem;
+    /* border: 1px solid green; */
+    
+    position: absolute;
+    top: -1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 2;
+  }
+
+  .line {
+    width: 100%;
+    height: 20%;
+    background-color: #263238;
+  }
+
+  .nav-list {
+    /* /* display: block; */
+    height: 150vh;
+    background-color: #fff;
+
+    position: absolute;
+    left: -2.5rem;
+
+    padding-top: 4rem;
+    padding-left: 2.5rem;
+
+    transform: translateX(-150%);
+    transition: all 0.5s ease-out 0s;
+  }
+
+  .nav-content li {
+    display: block;
+    padding-bottom: 1em;
+  }
+
+  .hamburger-menu input[type="checkbox"]:checked ~ .nav-list {
+    transform: translateX(0%);
+    z-index: 1;
+  }
+
+  .line1 {
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease;
+  }
+
+  .line3 {
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease;
+  }
+
+  .hamburger-menu input[type="checkbox"]:checked ~ .hamburger-line .line1 {
+    transform: rotate(45deg);
+  }
+
+  .hamburger-menu input[type="checkbox"]:checked ~ .hamburger-line .line2 {
+    display: none;
+  }
+
+  .hamburger-menu input[type="checkbox"]:checked ~ .hamburger-line .line3 {
+    transform: rotate(-45deg);
+  }
+
+
+  .about-us {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-article {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .about-article, .about-image {
+    transform: translateX(0);
+    transition: none;
+  }
+
+  .food-image-container {
+    flex-direction: column;
+  }
+
+  .food-image:not(:last-child) {
+    margin: 2% 0;
+  }
+
+  .menu-item-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .menu-description {
+    text-align: center;
+  }
+
+  .review-content-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .review-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .review-image, .review-article {
+    flex-basis: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (max-width: 500px){
+  body {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    width: 98%;
+  }
+}
+/* #################      Media Queries       ################### */

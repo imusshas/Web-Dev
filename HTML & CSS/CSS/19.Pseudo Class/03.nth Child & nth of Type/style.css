@@ -1,0 +1,12 @@
+p:nth-child(2) {
+  color: brown;
+}
+
+p:nth-child(2n) {
+  background-color: lightgray;
+}
+
+p:nth-of-type(3) {
+  color: steelblue;
+  border: 2px solid chocolate;
+}

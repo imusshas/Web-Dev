@@ -1,0 +1,22 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: #777;
+
+  /* transition: property, duration, timing-function; */
+
+  /* transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  transition: width 1s ease,
+              height 1s ease; */
+
+  transition: all 1s ease;
+}
+
+.box:hover {
+  background-color: burlywood;
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,24 @@
+Browser Reading [
+    HTML [
+        Head[
+            Title[]
+            Meta[]
+        ]      
+        
+        Body[
+            Header [
+                Nav
+                Logo
+            ]
+            Section[]
+        ]
+    ]
+]
+
+This whole thing is called OBJECT. And This OBJECT is called DOCUMENT
+
+JavaScript [
+    window {
+        document {}
+    }
+]

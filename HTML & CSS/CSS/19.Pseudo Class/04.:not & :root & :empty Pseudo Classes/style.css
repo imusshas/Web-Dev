@@ -1,0 +1,35 @@
+/* :not(p) {
+  color: grey;
+} 
+    P will be grey because for this command body will be given color grey. 
+    And p tag will inherit grey color.
+*/
+
+
+body :not(p) {
+  color: grey;
+}
+
+body :not(p.fancy) {
+  background-color: lightskyblue;
+}
+
+/* div.zero:empty { */
+div:empty {
+  width: 100px;
+  height: 100px;
+  background-color: #888;
+  border: 2px solid bisque;
+}
+/* Do you remember? specificity */
+
+:root {
+  background-color: red;
+  color: black;
+  
+}
+
+html {
+  background-color: #333;
+  color: #eee;
+}

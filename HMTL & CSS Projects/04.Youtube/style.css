@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+
+/* Utility Classes */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+/* Utility Classes */
+
+/* ####################      Hamburger Styling       ##################### */
+
+.hamburger-box[type="checkbox"] {
+  width: 32px;
+  height: 32px;
+
+  position: fixed;
+  top: 15px;
+  left: 24px;
+
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  font-size: 32px;
+
+  position: fixed;
+  top: 15px;
+  left: 24px;
+
+  z-index: 4;
+  cursor: pointer;
+}
+
+
+.hamburger-list {
+  width: 300px;
+  min-height: 100vh;
+  background-color: #fff;
+  font-size: 20px;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  
+  transform: translateX(-350px);
+  transition: transform 0.2s ease-in-out;
+
+  box-shadow: 0px -10px 10px 0px #aaa;
+
+  z-index: 3;
+}
+.hamburger-box[type="checkbox"]:checked ~ .hamburger-list {
+  transform: translateX(0);
+}
+
+.hamburger-box[type="checkbox"]:checked ~  .side-nav{
+  display: none;
+}
+
+main {
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-box[type="checkbox"]:checked ~  main {
+  padding-left: 310px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hamburger-list a {
+  display: block;
+  margin: 0 12px;
+  padding: 12px;
+}
+
+.hamburger-list a:hover {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+
+.hamburger-list i {
+  display: inline-block;
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+
+.youtube {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  /* border: 2px solid aquamarine; */
+  margin: auto;
+
+  position: fixed;
+  top: 15px;
+  left: 80px;
+  z-index: 3;
+}
+
+.youtube h1 {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.youtube-icon {
+  display: inline-block;
+  color:#ff2200;
+  font-size: 3rem;
+  margin: auto;
+}
+/* ####################      Hamburger Styling       ##################### */
+
+
+/* ####################      Main Nav Styling        ##################### */
+
+
+.header {
+  width: 100vw;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #aaa;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+}
+
+.main-nav {
+  width: 100%;
+  /* height: 70px; */
+  display: grid;
+
+  grid-template-columns: 300px 60fr 20fr;
+}
+
+
+.search-section {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 70%;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  margin: 10px 0;
+  
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+
+.search-box {
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid #aaa;
+}
+
+.search-label {
+  background-color: #efefef;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  display: block;
+  font-size: 20px;
+  
+}
+
+.feature-section {
+  /* border: 4px solid #10c20d; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ####################      Main Nav Styling        ##################### */
+
+
+/* ####################      Side Nav Styling        ###################### */
+
+.side-nav {
+  height: 100vh;
+  background-color: #fff;
+  
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  z-index: 2;
+}
+
+.short-hamburger-list {
+  width: 100%;
+  /* min-height: 100vh; */
+  /* background-color: #912a2a; */
+  font-size: 12px;
+  /* border: 2px solid crimson; */
+  left: 0;
+}
+
+.short-hamburger-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.short-hamburger-list a {
+  width: 70px;
+  text-align: center;
+  padding: 12px 0;
+  margin-left: 2px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.short-hamburger-list a:hover {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+
+.short-hamburger-list-icon {
+  display: block;
+  padding-bottom: 5px;
+}
+
+/* ####################      Side Nav Styling        ###################### */
+
+
+main {
+  padding: 100px 50px 24px 90px;
+  background:  #fefefe;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 12px;
+  row-gap: 24px;
+}
+
+
+.video-section {
+  min-height: 300px;
+  /* border: 2px solid green; */
+}
+
+.video-section:hover .thumbnail-link .thumbnail-image {
+  border-radius: 0;
+}
+
+.thumbnail-link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.thumbnail-image {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  min-height: 190px;
+  border-radius: 10px;
+  box-shadow: 0px -2px 10px #ddd;
+}
+
+.video-description-section {
+  height: 100px;
+  /* border: 2px solid orange; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(2, 50px);
+}
+
+.channel-icon-link {
+  grid-row: 1/-1;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: auto 0 auto 10px;
+}
+
+.video-track-section {
+  margin-top: 5px;
+}
+
+.video-track-section a {
+  display: block;
+  margin-left: 10px;
+}
+
+
+
+
+/* ####################        Midea Queries        #################### */
+@media (max-width:1300px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:1080px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 10px;
+  }
+
+  .hamburger-box[type="checkbox"]:checked ~ main {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail-image {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    /* grid-template-columns: repeat(1, 1fr); */
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .hamburger-box[type="checkbox"] {
+    z-index: 0;
+  }
+
+  .hamburger-line {
+    font-size: 0px;
+  }
+
+  .youtube {
+    top: 0;
+    left: 0px;
+    width: auto;
+    /* border: 2px solid aquamarine; */
+  }
+  
+  .youtube h1 {
+    display: none;
+  }
+
+  .youtube-icon {
+    font-size: 6rem;
+  }
+
+  .main-nav {
+    grid-template-columns: 0.5fr 1fr 1fr;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .search-bar {
+    width: 20px;
+    border: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+  .search-label {
+    background: none;
+  }
+
+  .search-icon {
+    font-size: 3rem;
+  }
+
+  .feature-section a {
+    margin: 10px;
+  }
+
+  .thumbnail-image {
+    border-radius: 0;
+  }
+}
+/* ####################        Midea Queries        #################### */

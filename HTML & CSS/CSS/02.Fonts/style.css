@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span, strong {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.varsity {
+  font-weight: 300;
+}

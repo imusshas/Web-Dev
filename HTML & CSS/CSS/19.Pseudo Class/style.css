@@ -1,0 +1,37 @@
+/* Order of link pseudoclass: link -> visited -> hover ->active */
+
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: indianred;
+}
+
+a:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+a:active {
+  color: black;
+}
+
+p:hover {
+  color: #e31111;
+}
+
+p:active {
+  background-color: #cdcdce;
+}
+
+input:focus {
+  padding: 5px;
+  outline: none;
+  border: 2px solid grey;
+}
+
+input:required{
+  color: firebrick;
+}

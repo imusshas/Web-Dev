@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+main {
+    min-height: 100svh;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #efefef;
+    border-radius: 1rem;
+}
+
+button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover {
+    background-color: rgb(214, 214, 214);
+}

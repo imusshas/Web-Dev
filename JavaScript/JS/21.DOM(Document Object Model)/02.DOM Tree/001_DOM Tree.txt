@@ -1,0 +1,40 @@
+Document (Root Node) [
+    DOCTYPE html (Root Element/Child Node of Document/HTML Element Node) []
+    html (Root Element/Child Node of Document/HTML Element Node) [
+        head(Element Node/Child Node of HTML) [
+            newline-space(Text Node) []
+
+            title(Element Node/Child Node of Head) [
+                Dom Traversing (Text Node)
+            ]
+
+            newline-space(Text Node) []
+
+            script(Element Node/Child Node of Head)[]
+
+            newline-space(Text Node) []
+        ]
+
+        newline-space(Text Node) []
+
+        body(Element Node/Child Node of HTML) [
+            newline-space(Text Node) []
+
+            div[
+                newline-space(Text Node) []
+
+                h1[
+                    My Heading
+                ]
+                
+                newline-space(Text Node) []
+
+                p[
+                    Some Useful Information
+                ]
+            ]
+
+            newline-space(Text Node) []
+        ]
+    ]
+]

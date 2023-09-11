@@ -1,0 +1,40 @@
+
+
+/* ##########      FLEX CONTAINER     ################ */
+.box-wrapper {
+  max-width: 1200px;
+  border: 10px solid gray;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+/* ##########      FLEX CONTAINER     ################ */
+
+
+
+
+/* ##########      FLEX ITEMS     ################ */
+
+.box {
+  flex-basis: 600px;
+  /* border: 4px solid red; */
+}
+
+.box1 {
+  background: aquamarine;
+  flex-shrink: 1;
+}
+
+.box2 {
+  background-color: beige;
+  flex-shrink: 2;
+}
+
+.box3 {
+  background-color: salmon;
+  flex-shrink: 3;
+}
+
+.box4 {
+  background-color: #ccc;
+}
+/* ##########      FLEX ITEMS     ################ */

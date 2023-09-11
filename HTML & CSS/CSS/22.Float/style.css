@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 10px solid green;
+}
+
+.fav-places {
+  width: 45%;
+  background-color: #ddd;
+  border: 4px solid red;
+  float: left;
+}
+
+.fav-foods {
+  width: 55%;
+  background-color: lavenderblush;
+  float: right;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.outer {
+  content: "";
+  clear: both;
+}
+
+/* .clearfix {
+  clear: both;
+} */
+
+.float-layout {
+  margin-top: 2rem;
+  background-color: lightcoral;
+
+}
+
+.left {
+  width: 25vw;
+  background-color: beige;
+  float: left;
+}
+
+.left-middle {
+  width: 25vw;
+  background-color: cadetblue;
+  float: left;
+}
+
+.right-middle {
+  width: 25vw;
+  float: left;
+  background-color: lightseagreen;
+}
+
+.right {
+  width: 25vw;
+  float: left;
+  background-color: bisque;
+}
+
+.float-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}

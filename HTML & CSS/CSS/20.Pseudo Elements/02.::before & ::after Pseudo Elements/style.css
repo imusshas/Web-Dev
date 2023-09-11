@@ -1,0 +1,19 @@
+.cool::before {
+  content: "Hey there,";
+  color: grey;
+  padding-right: 7px;
+}
+
+/* content is mandatory */
+
+.cool::after {
+  content: ",let's dive in";
+  color: grey;
+  padding-left: 7px;
+}
+
+/* Can't use these pseudo classes with 
+          image
+          br
+          input
+         */
